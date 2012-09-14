@@ -1,7 +1,7 @@
 ifeq ($(KERNEL_FOLDER),)
 KERNEL_FOLDER=/home/azuzu/aZuZu_Google/Kernels/nobodyAtall-nAa-kernel-cd09061/
 else
-KERNLEL_FOLDER=$(KERNEL_FOLDER)
+KERNEL_FOLDER=$(KERNEL_FOLDER)
 endif
 ifeq ($(cpu), msm7k)
 EXTRA_CFLAGS += -DCONFIG_KEXEC -DCONFIG_ARM -Wall -march=armv6k -mtune=strongarm -mfpu=vfp
